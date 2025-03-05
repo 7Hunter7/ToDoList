@@ -1,8 +1,6 @@
 <template>
   <div id="app">
-    <header class="app-header">
-      <span class="logo">TODOS</span>
-    </header>
+    <AppHeader />
 
     <aside class="app-filters">
       <section class="toggle-group">
@@ -62,3 +60,14 @@
     <footer class="app-footer">2 more to do, 1 done</footer>
   </div>
 </template>
+
+<scriptz lang="ts">
+import { defineComponent } from "vue";
+import AppHeader from "./components/AppHeader.vue";
+
+export default defineComponent({
+  components: {
+    AppHeader,
+  },
+});
+</scriptz>
